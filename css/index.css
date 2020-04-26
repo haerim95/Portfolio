@@ -1,0 +1,38 @@
+/* common */
+.clear:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.floatL{
+    float: left;
+}
+.floatR{
+    float: right;
+}
+.pointer{
+    cursor: pointer;
+}
+.table{
+    display: table;
+}
+.tableCell{
+    display: table-cell;
+    vertical-align: middle;
+}
+/* body */
+body{
+    font-size: 14px;
+    color: #222222;
+}
+/* header */
+#headerWrap{
+    padding: 10px 20px;
+}
+#headerWrap h1{
+    font-size: 1.4rem;
+}
+#headerWrap .headerMenu li{
+    float: left;
+    padding: 0 10px;
+}
