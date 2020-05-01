@@ -89,19 +89,32 @@ body{
     height: 70vh;
 }
 #about dl{
+    float: left;
+    width: 50%;
     margin-bottom: 25px;
 }
 #about dl dt{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 #about dl dt span{
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-right: 5px;
     border-bottom: 2px solid #898989;
+}
+#about dl dt span i{
+    padding-right: 5px;
+}
+#about .picWrap div{
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    background-color: #898989;
 }
 #about .year{
     width: 100%;
 }
 #about .year ul li{
     float: left;
+    text-align: center;
 }
