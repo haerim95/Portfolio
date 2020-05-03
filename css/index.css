@@ -20,8 +20,11 @@
     display: table-cell;
     vertical-align: middle;
 }
+.hide{
+    display: none;
+}
 .topUp{
-    position: absolute;
+    position: fixed;
     bottom: 40px;
     right: 40px;
 }
@@ -114,7 +117,25 @@ body{
 #about .year{
     width: 100%;
 }
+#about .year ul{}
 #about .year ul li{
     float: left;
     text-align: center;
+}
+#about .year ul li .row{
+    position: relative;
+}
+#about .year ul li .row .circle{
+    position: absolute;
+    top: 50%;
+    margin-top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #898989;
+}
+#about .year .line{
+    width: 100%;
+    height: 2px;
+    background-color: #898989;
 }
