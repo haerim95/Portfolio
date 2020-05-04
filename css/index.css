@@ -31,7 +31,7 @@
 .topUp{
     width: 35px;
     height: 35px;
-    border: 1px solid #ffffff;
+    border: 1px solid rgb(46, 101, 173);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     text-align: center;
@@ -39,7 +39,7 @@
 }
 .topUp i{
     vertical-align: middle;
-    color: #ffffff;
+    color: rgb(46, 101, 173);
 }
 /* body */
 body{
@@ -122,13 +122,29 @@ body{
     float: left;
     text-align: center;
 }
+#about .year ul li .row:nth-of-type(even){
+    margin-top: 60px;
+}
 #about .year ul li .row{
     position: relative;
 }
-#about .year ul li .row .circle{
+#about .year ul li .row .txt{
+    padding-bottom: 20px;
+}
+#about .year ul li .row:nth-of-type(even) .txt{
+    padding-top: 20px;
+}
+#about .year ul li .row span{
+    display: block;
+}
+#about .year ul li .row:after{
+    content: "";
+    display: inline-block;
     position: absolute;
     top: 50%;
     margin-top: 4px;
+    left: 50%;
+    margin-left: -6px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
