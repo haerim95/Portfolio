@@ -73,7 +73,7 @@ body{
 #main{
     position: relative;
 	/* padding-top : calc(100vh/100% * 100%); calc (이미지 높이 ÷ 이미지 가로 × 100 %) */
-	background : url('/image/background1.jpg') center center / cover no-repeat;
+	/* background : url('/image/background1.jpg') center center / cover no-repeat; */
 }
 #main header{
     position: absolute;
