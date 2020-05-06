@@ -1,16 +1,10 @@
-var imgArray = new Array();
-	imgArray[0] = "/image/main/1.jpg";
-	imgArray[1] = "/image/main/2.jpg";
-	imgArray[2] = "/image/main/3.jpg"
-	imgArray[3] = "/image/main/4.jpg";
-	imgArray[4] = "/image/main/5.jpg";
-	
-	function showImage(){
-		var imgNum = Math.round(Math.random()*4);
-		var objImg = document.getElementsByClassName('mainImg');
-		objImg.src = imgArray[imgNum];
-	}
-	showImage();
+var imgName = ['/image/main/1.jpg', '/image/main/2.jpg', '/image/main/3.jpg', '/image/main/4.jpg', '/image/main/5.jpg'];
+
+function bgImgChange(){
+	var imgUrl = "url(" + imgName[Math.floor(Math.random() * 5)] + ")";
+	document.getElementById('main').style.backgroundImage = imgUrl;
+}
+bgImgChange();
     
 // const bgimages = document.querySelector("main");
 

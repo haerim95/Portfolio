@@ -15,5 +15,5 @@ $btnScrollTop.addEventListener('click', scrollToTop);
 $btnScrollTop.style.visibility = "hidden";
 window.onscroll = function() {
     var pageOffset = document.documentElement.scrollTop || document.body.scrollTop;
-    if ($btnScrollTop) $btnScrollTop.style.visibility = pageOffset > 100 ? 'visible' : 'hidden';
+    if ($btnScrollTop) $btnScrollTop.style.visibility = pageOffset > 10 ? 'visible' : 'hidden';
 };

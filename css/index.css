@@ -27,11 +27,12 @@
     position: fixed;
     bottom: 40px;
     right: 40px;
+    z-index: 9999;
 }
 .topUp{
     width: 35px;
     height: 35px;
-    border: 1px solid rgb(46, 101, 173);
+    border: 1px solid #898989;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     text-align: center;
@@ -39,7 +40,7 @@
 }
 .topUp i{
     vertical-align: middle;
-    color: rgb(46, 101, 173);
+    color: #898989;
 }
 /* body */
 body{
@@ -72,7 +73,9 @@ body{
 /* main */
 #main{
     position: relative;
-	/* padding-top : calc(100vh/100% * 100%); calc (이미지 높이 ÷ 이미지 가로 × 100 %) */
+    background-size: cover;
+    background-position: center;
+    /* padding-top : calc(100vh/100% * 100%); calc (이미지 높이 ÷ 이미지 가로 × 100 %) */
 	/* background : url('/image/background1.jpg') center center / cover no-repeat; */
 }
 #main header{
@@ -141,8 +144,7 @@ body{
     content: "";
     display: inline-block;
     position: absolute;
-    top: 50%;
-    margin-top: 4px;
+    bottom: -6px;
     left: 50%;
     margin-left: -6px;
     width: 12px;
