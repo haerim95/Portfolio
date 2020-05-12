@@ -73,6 +73,7 @@ body{
 /* main */
 #main{
     position: relative;
+    background-image: 100%;
     background-size: cover;
     background-position: center;
     /* padding-top : calc(100vh/100% * 100%); calc (이미지 높이 ÷ 이미지 가로 × 100 %) */
