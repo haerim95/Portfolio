@@ -174,3 +174,7 @@ body{
 #about .year .line .btnSlider i{
     color: #898989;
 }
+#footer{
+    height: 60px;
+    line-height: 60px;
+}
