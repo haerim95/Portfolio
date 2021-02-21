@@ -72,19 +72,17 @@ body{
 }
 /* main */
 #main{
+    display: table;
     position: relative;
-    background-image: 100%;
     background-size: cover;
     background-position: center;
+    text-align: center;
     /* padding-top : calc(100vh/100% * 100%); calc (이미지 높이 ÷ 이미지 가로 × 100 %) */
 	/* background : url('/image/background1.jpg') center center / cover no-repeat; */
 }
 #main header{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -180px;
-    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 
     padding: 20px 35px;
     background-color: rgba(255, 255, 255, .4);
