@@ -6,22 +6,30 @@
 // }
 // bgImgChange();
 
-var $win, scrollTop, docHeight, winHeight, scrollPercent, $title, color;
+const text = document.querySelector('.fancy');
+const strText = text.textContent;
+const splintText = strText.split("");
 
-  $win = $(window);
-  $body = $('body');
-  $title = $('h1').eq(0);
-  scrollPercent = 0;
-  scrollTop = $win.scrollTop();
-  docHeight = $(document).height();
-  winHeight = window.innerHeight;
-  color = $.husl.p.toHex((59 + (scrollPercent * 360)) % 360,100,70);
-  $body.css('background-color', color);
-  
-  $win.on('scroll', function(e){
-    scrollTop = $win.scrollTop();
-    scrollPercent = scrollTop / (docHeight - winHeight);
-    color = $.husl.p.toHex((59 + (scrollPercent * 360)) % 360,100,70);
-    $title.html(color + '<span>husl(' + (59 + (scrollPercent * 360).toFixed()) % 360 +'%,100,70)</span>');
-    $body.css('background-color', color);
-  });
+text.textContent = "";
+
+for(let i=0; i < splintText.length; i++){
+  text.innerHTML += "<span>" + splintText[i] + "</span>";
+}
+
+let char = 0;
+let timer = setInterval(onTick, 50);
+
+function onTick(){
+  const span = text.querySelectorAll('#main span')[char];
+  span.classList.add('fade');
+  char++
+  if(char === splintText.length){
+    complete();
+    return;
+  }
+}
+
+function complete(){
+  clearInterval(timer);
+  timer = null;
+}

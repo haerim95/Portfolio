@@ -74,9 +74,10 @@ body{
 #main{
     display: table;
     position: relative;
-    background-size: cover;
-    background-position: center;
+    font-size: 4em;
     text-align: center;
+    background-color: #000000;
+    color: #ffffff;
     /* padding-top : calc(100vh/100% * 100%); calc (이미지 높이 ÷ 이미지 가로 × 100 %) */
 	/* background : url('/image/background1.jpg') center center / cover no-repeat; */
 }
@@ -85,9 +86,19 @@ body{
     vertical-align: middle;
 
     padding: 20px 35px;
-    background-color: rgba(255, 255, 255, .4);
-    color: #2b6a9e;
 }
+#main span{
+    opacity: 0;
+    transition: all .5s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+#main span.fade{
+    opacity: 1;
+    transform: translateY(0px);
+    color: rgb(105, 165, 206);
+}
+
 /* about */
 #about{
     padding: 0 30px;
@@ -179,3 +190,4 @@ body{
     height: 60px;
     line-height: 60px;
 }
+
