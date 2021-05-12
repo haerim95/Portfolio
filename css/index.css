@@ -98,6 +98,17 @@ body{
     transform: translateY(0px);
     color: rgb(105, 165, 206);
 }
+#main  header p{
+    display: inline-block;
+}
+#main .cursor{
+    animation: cursor 0.4s infinite;
+}
+@keyframes cursor{ 
+    0%{border-right: 1px solid #fff} 
+    50%{border-right: 1px solid #000} 
+    100%{border-right: 1px solid #fff} 
+  }
 
 /* about */
 #about{
