@@ -6,8 +6,9 @@
 // }
 // bgImgChange();
 
-const text = document.querySelector('.fancy');
-const strText = text.textContent;
+const text = document.querySelectorAll('.fancy p');
+const strText = text.map(innerText);
+console.log(strText);
 const splintText = strText.split("");
 
 text.textContent = "";
