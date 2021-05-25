@@ -49,7 +49,7 @@ String.prototype.toKorChars = function() {
 //타이핑할 문장
 var typing1  = "안녕하세요";
 var typing2  = "매일매일 SKILL UP 진행 중인";
-var typing3  = "웹 퍼블리셔 김해림 입니다";
+var typing3  = "웹 퍼블리셔 김해림 입니다.";
 var typeing1=[], typeing2=[], typeing3=[];
 typing1 = typing1.split(''); // 한글자씩자름
 typing2 = typing2.split(''); // 한글자씩자름
@@ -147,10 +147,7 @@ function typi2(){
   }
 }
 function typi3(){
-  //글자수만큼 반복후 종료 
-
   if(j<=imax3-1){
-      //각 글자가 초성 중성 종성 순서대로 추가되도록 
       var jmax3 = typeing3[j].length;
       resultDiv3.innerHTML = text + typeing3[j][v];
       v++;
